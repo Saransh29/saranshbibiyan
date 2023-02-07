@@ -5,15 +5,18 @@ const skills = [
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "JavaScript" },
+  { skill: "C/C++" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
   { skill: "Git" },
   { skill: "GitHub" },
   { skill: "Flutter" },
+  { skill: "Dart" },
   { skill: "Express.JS" },
   { skill: "Node.JS" },
   { skill: "PostgreSQL" },
+  { skill: "MySQL" },
   { skill: "Firebase" },
 ];
 

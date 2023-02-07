@@ -41,7 +41,11 @@ export default function Navbar() {
                   setNavbar(!navbar);
                 }}
               >
-                {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
+                {navbar ? (
+                  <IoMdClose className=" fill-white " size={30} />
+                ) : (
+                  <IoMdMenu className=" fill-white " size={30} />
+                )}
               </button>
             </div>
           </div>
