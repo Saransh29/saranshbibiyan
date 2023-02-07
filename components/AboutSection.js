@@ -52,7 +52,8 @@ const AboutSection = () => {
               technologies. I am also working on a few personal projects that I
               hope to launch soon. I am working on building webapps using
               <span className="font-bold text-teal-500"> Next.js </span>
-              and <span className="font-bold text-teal-500"> Tailwind CSS.</span>
+              and{" "}
+              <span className="font-bold text-teal-500"> Tailwind CSS.</span>
             </p>
             <br />
             <p>
@@ -73,7 +74,7 @@ const AboutSection = () => {
                 return (
                   <p
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                    className="dark:bg-gray-200 bg-gray-400 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
                   >
                     {item.skill}
                   </p>
