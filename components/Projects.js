@@ -29,14 +29,6 @@ const projects = [
     github: "https://github.com/Saransh29/crypto-tracker-react",
     link: "https://crypto-tracker-react-psi.vercel.app/",
   },
-  {
-    name: "CoinWatch",
-    description:
-      "CoinWatch is a crypto price tracking app which uses CoinGecko API.",
-    image: "/coinwatch.png",
-    github: "https://github.com/Saransh29/crypto-tracker-react",
-    link: "https://crypto-tracker-react-psi.vercel.app/",
-  },
 ];
 
 const ProjectsSection = () => {

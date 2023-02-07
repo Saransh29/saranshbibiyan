@@ -23,11 +23,9 @@ export default function Content() {
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
-            <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
-            </span>
-            based in Delhi, India. Currently pursuing my final year B.Tech. Working towards creating software that makes
-            xyz easier.
+            <span className="font-semibold text-teal-600">Web Developer </span>
+            based in Delhi, India. Currently pursuing my final year B.Tech.
+            Working towards creating software that makes xyz easier.
           </p>
           <Link
             to="projects"
