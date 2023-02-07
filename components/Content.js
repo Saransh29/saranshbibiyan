@@ -24,8 +24,8 @@ export default function Content() {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">Web Developer </span>
-            based in Delhi, India. Currently pursuing my final year B.Tech.
-            Working towards creating software that makes xyz easier.
+            based in Delhi, India. Currently pursuing my final year B.Tech. from
+            NSUT, Delhi & building web apps with React and Next.js.
           </p>
           <Link
             to="projects"
@@ -38,6 +38,11 @@ export default function Content() {
           >
             Projects
           </Link>
+          <a href="assets/Saransh_Bibiyan_2023.pdf" download>
+            <button className="text-neutral-100 font-semibold px-6 py-3 mx-2 bg-teal-600 rounded shadow hover:bg-teal-700">
+              Resume
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
