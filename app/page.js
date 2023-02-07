@@ -1,4 +1,8 @@
-import React from "react";
+import Content from "@/components/Content";
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline"></h1>;
+  return (
+    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+      <Content />
+    </main>
+  );
 }
