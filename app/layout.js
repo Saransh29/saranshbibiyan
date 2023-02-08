@@ -2,6 +2,8 @@
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
+import { AnalyticsWrapper } from "@/components/Analytics";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar /> {children}
         </ThemeProvider>
+        <AnalyticsWrapper />
       </body>
     </html>
   );
