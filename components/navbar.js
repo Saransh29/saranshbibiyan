@@ -62,14 +62,13 @@ export default function Navbar() {
                   <Link
                     key={idx}
                     to={item.page}
-                    className={
-                      "block lg:inline-block text-inherit"
-                    }
+                    className={"block lg:inline-block text-inherit"}
                     activeClass="active"
                     spy={true}
                     smooth={true}
                     offset={-100}
                     duration={500}
+                    cursor="pointer"
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}

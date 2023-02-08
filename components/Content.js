@@ -35,6 +35,7 @@ export default function Content() {
             smooth={true}
             offset={-100}
             duration={500}
+            cursor="pointer"
           >
             Projects
           </Link>
