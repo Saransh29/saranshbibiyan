@@ -26,12 +26,12 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50  bg-transparent shadow dark:bg-black dark:border-b dark:border-black">
+    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50  bg-transparent shadow dark:backdrop-blur">
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <div className="md:py-5 md:block">
-              <h2 className="text-4xl font-bold text-neutral-900 dark:text-neutral-100">
+          <div className="flex items-center justify-between py-3 md:py-3 md:block">
+            <div className="md:py-1 md:block">
+              <h2 className="text-4xl font-bold  text-inherit ">
                 Saransh Bibiyan
               </h2>
             </div>
@@ -63,7 +63,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      "block lg:inline-block text-inherit"
                     }
                     activeClass="active"
                     spy={true}
