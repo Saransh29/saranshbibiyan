@@ -38,12 +38,12 @@ export default async function handler(req, res) {
             textAlign: "center",
             justifyContent: "center",
             alignItems: "center",
-            fontSize: 100,
+            fontSize: 160,
             fontFamily: "Kaisei Tokumin",
-            letterSpacing: "-0.05em",
+            // letterSpacing: "-0.05em",
             fontStyle: "normal",
             color: "white",
-            lineHeight: "120px",
+            // lineHeight: "120px",
             whiteSpace: "pre-wrap",
           }}
         >
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
     ),
     {
       width: 1200,
-      height: 630,
+      height: 1200,
       fonts: [
         {
           name: "Kaisei Tokumin",
