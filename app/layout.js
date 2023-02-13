@@ -3,11 +3,11 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
 import { AnalyticsWrapper } from "@/components/Analytics";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
-  const router = useRouter();
-  const showHeader = router.pathname === "/url" ? true : false;
+  const pathname = usePathname();
+  const showHeader = pathname === "/url" ? false : true;
 
   return (
     <html lang="en">

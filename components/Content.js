@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Content() {
   return (
@@ -49,6 +51,39 @@ export default function Content() {
               Resume
             </button>
           </a>
+          {/* <div className="flex flex-row items-center sm:justify-center justify-start space-x-2 mb-1 p-2">
+            <a
+              href="https://github.com/Saransh29"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineGithub
+                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
+                size={30}
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/saransh-bibiyan/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineLinkedin
+                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
+                size={30}
+              />
+            </a>
+            <a
+              href="https://leetcode.com/sky_sk/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <SiLeetcode
+                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
+                size={30}
+              />
+            </a>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
