@@ -41,7 +41,7 @@ export default function Content() {
             Projects
           </Link>
           <a
-            href="/Saransh_Bibiyan_2023.pdf"
+            href="https://www.saransh.me/resume.pdf"
             alt="alt text"
             target="_blank"
             rel="noopener noreferrer"
