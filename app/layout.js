@@ -3,8 +3,12 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
 import { AnalyticsWrapper } from "@/components/Analytics";
+import { useRouter } from "next/navigation";
 
 export default function RootLayout({ children }) {
+  const router = useRouter();
+  const showHeader = router.pathname === "/url" ? true : false;
+
   return (
     <html lang="en">
       {/*
@@ -14,7 +18,7 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar /> {children}
+          {showHeader && <Navbar />} {children}
         </ThemeProvider>
         <AnalyticsWrapper />
       </body>
