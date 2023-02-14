@@ -45,7 +45,6 @@ export default function Content() {
             alt="alt text"
             target="_blank"
             rel="noopener noreferrer"
-            download
           >
             <button className="text-neutral-100 font-semibold px-6 py-3 mx-2 bg-teal-600 rounded shadow hover:bg-teal-700">
               Resume
