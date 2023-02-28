@@ -3,13 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-import { SiLeetcode } from "react-icons/si";
 
 export default function Content() {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
+      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 pt-24 pb-16 sm:pb-32 md:pb-28 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
           <Image
             src="/headshot.jpeg"
@@ -50,39 +48,6 @@ export default function Content() {
               Resume
             </button>
           </a>
-          {/* <div className="flex flex-row items-center sm:justify-center justify-start space-x-2 mb-1 p-2">
-            <a
-              href="https://github.com/Saransh29"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <AiOutlineGithub
-                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
-                size={30}
-              />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/saransh-bibiyan/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <AiOutlineLinkedin
-                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
-                size={30}
-              />
-            </a>
-            <a
-              href="https://leetcode.com/sky_sk/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <SiLeetcode
-                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
-                size={30}
-              />
-            </a>
-          </div> */}
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">

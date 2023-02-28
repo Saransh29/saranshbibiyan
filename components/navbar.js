@@ -62,7 +62,9 @@ export default function Navbar() {
                   <Link
                     key={idx}
                     to={item.page}
-                    className={"block lg:inline-block text-inherit cursor-pointer"}
+                    className={
+                      "block lg:inline-block text-inherit cursor-pointer"
+                    }
                     activeClass="active"
                     spy={true}
                     smooth={true}

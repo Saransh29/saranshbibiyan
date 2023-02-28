@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
 import { AnalyticsWrapper } from "@/components/Analytics";
 import { usePathname } from "next/navigation";
+import Sidebar from "@/components/sidebar";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -18,7 +19,8 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <ThemeProvider enableSystem={true} attribute="class">
-          {showHeader && <Navbar />} {children}
+          {showHeader && <Navbar />} 
+          {<Sidebar />}{children}
         </ThemeProvider>
         <AnalyticsWrapper />
       </body>
