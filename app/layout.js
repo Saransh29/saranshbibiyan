@@ -5,10 +5,11 @@ import { ThemeProvider } from "next-themes";
 import { AnalyticsWrapper } from "@/components/Analytics";
 import { usePathname } from "next/navigation";
 import Sidebar from "@/components/sidebar";
+import { SessionProvider } from "next-auth/react";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const showHeader = pathname === "/url" ? false : true;
+  const showHeader = pathname !== "/" ? false : true;
 
   return (
     <html lang="en">
@@ -18,11 +19,14 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <ThemeProvider enableSystem={true} attribute="class">
-          {showHeader && <Navbar />} 
-          {<Sidebar />}{children}
-        </ThemeProvider>
-        <AnalyticsWrapper />
+        <SessionProvider>
+          <ThemeProvider enableSystem={true} attribute="class">
+            {showHeader && <Navbar />}
+            {showHeader && <Sidebar />}
+            {children}
+          </ThemeProvider>
+          <AnalyticsWrapper />
+        </SessionProvider>
       </body>
     </html>
   );

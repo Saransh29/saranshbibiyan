@@ -13,7 +13,7 @@ const Sidebar = () => {
             target="_blank"
           >
             <AiOutlineGithub
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-black dark:text-neutral-300"
               size={30}
             />
           </a>
@@ -24,7 +24,7 @@ const Sidebar = () => {
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-red dark:text-neutral-300"
               size={30}
             />
           </a>
@@ -34,7 +34,7 @@ const Sidebar = () => {
             target="_blank"
           >
             <SiLeetcode
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-300 "
               size={30}
             />
           </a>
