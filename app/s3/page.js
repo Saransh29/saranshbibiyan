@@ -62,10 +62,3 @@ const Url = () => {
 
 export default Url;
 
-export const getServerSideProps = async (context) => {
-  return {
-    props: {
-      session: await getSession(context),
-    },
-  };
-};
