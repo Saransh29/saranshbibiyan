@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { useSession ,signIn ,signOut} from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
-import { AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineGoogle } from "react-icons/ai";
 
 const Url = () => {
   const { data: session, status } = useSession();
@@ -10,11 +10,20 @@ const Url = () => {
   if (status !== "authenticated") {
     return (
       <div className="w-full h-full text-center text-lg">
-        <h1 className="text-4xl font-bold">URL dashboard</h1>
-        <div className="flex justify-center p-5 m-5">
-          <p>Sign In with Github</p>
+        <h1 className="text-4xl font-bold">S3 dashboard</h1>
+        <div className="flex justify-center p-5 m-5 rounded-xl">
+          <p>Sign In with </p>
           <button type="button" onClick={() => signIn("github")}>
             <AiOutlineGithub
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
+              size={30}
+            />
+          </button>
+        </div>
+        <div className="flex justify-center p-5 m-5 rounded-xl">
+          <p>Sign In with </p>
+          <button type="button" onClick={() => signIn("google")}>
+            <AiOutlineGoogle
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-400"
               size={30}
             />
