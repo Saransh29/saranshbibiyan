@@ -27,6 +27,11 @@ const nextConfig = {
         source:"/lc",
         destination:"https://leetcode.com/sky_sk/",
         permanent:true,
+      },
+      {
+        source:"/ai",
+        destination:"https://openjourney-next.vercel.app",
+        permanent:true,
       }
     ];
   },
