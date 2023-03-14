@@ -19,14 +19,12 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <SessionProvider>
           <ThemeProvider enableSystem={true} attribute="class">
             {showHeader && <Navbar />}
             {showHeader && <Sidebar />}
             {children}
           </ThemeProvider>
           <AnalyticsWrapper />
-        </SessionProvider>
       </body>
     </html>
   );
