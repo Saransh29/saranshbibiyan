@@ -6,12 +6,28 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
+    name: "OpenJourney",
+    description:
+      "Developed a web app to Generate an imaginative image through Stable Diffusion AI midjourney v4 Model hosted on a GCP VM instance",
+    image: "/openjourney1.png",
+    github: "https://github.com/Saransh29/next-stable-diff",
+    link: "https://openjourney-next.vercel.app/",
+  },
+  {
     name: "AgriMan",
     description:
       "AgriMan is an Agriculture companion app that shows crop stats, weather, and answers your questions .",
     image: "/agriman.png",
     github: "https://github.com/Saransh29/AgriMan",
     link: "https://agriman-web.pages.dev/##/",
+  },
+  {
+    name: "Saransh.me",
+    description:
+      "AgriMan is an Agriculture companion app that shows crop stats, weather, and answers your questions .",
+    image: "/portfolio.png",
+    github: "https://github.com/Saransh29/saranshbibiyan",
+    link: "https://www.saransh.me/",
   },
   {
     name: "Fire-Chat",
