@@ -5,7 +5,6 @@ import { ThemeProvider } from "next-themes";
 import { AnalyticsWrapper } from "@/components/Analytics";
 import { usePathname } from "next/navigation";
 import Sidebar from "@/components/sidebar";
-import { SessionProvider } from "next-auth/react";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -19,12 +18,12 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-          <ThemeProvider enableSystem={true} attribute="class">
-            {showHeader && <Navbar />}
-            {showHeader && <Sidebar />}
-            {children}
-          </ThemeProvider>
-          <AnalyticsWrapper />
+        <ThemeProvider enableSystem={true} attribute="class">
+          {showHeader && <Navbar />}
+          {showHeader && <Sidebar />}
+          {children}
+        </ThemeProvider>
+        <AnalyticsWrapper />
       </body>
     </html>
   );
