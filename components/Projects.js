@@ -9,6 +9,7 @@ const projects = [
     description:
       "Developed a web app to Generate an imaginative image through Stable Diffusion AI midjourney v4 Model hosted on a GCP VM instance. Images and prompts stored on MongoDB database.",
     image: "/openjourney1.png",
+    tech: "React, Nextjs, MongoDB, GCP, Nodejs, Expressjs",
     github: "https://github.com/Saransh29/next-stable-diff",
     link: "https://openjourney-next.vercel.app/",
   },
@@ -17,6 +18,7 @@ const projects = [
     description:
       "AgriMan is an Agriculture companion app that shows crop stats, weather, and answers your questions .",
     image: "/agriman.png",
+    tech: "Flutter , Firebase",
     github: "https://github.com/Saransh29/AgriMan",
     link: "https://agriman-web.pages.dev/##/",
   },
@@ -25,6 +27,7 @@ const projects = [
     description:
       "AgriMan is an Agriculture companion app that shows crop stats, weather, and answers your questions .",
     image: "/portfolio.png",
+    tech: "React, Nextjs, Tailwindcss",
     github: "https://github.com/Saransh29/saranshbibiyan",
     link: "https://www.saransh.me/",
   },
@@ -33,6 +36,7 @@ const projects = [
     description:
       "Developed a messaging application using Flutter & using Firebase Cloud Firestore for storing messages and Firebase Authentication for user authentication.",
     image: "/firechat.png",
+    tech: "Flutter , Firebase",
     github: "https://github.com/Saransh29/fire_chat",
     link: "http://www.fire-chat.tech/",
   },
@@ -41,6 +45,7 @@ const projects = [
     description:
       "CoinWatch is a crypto price tracking app which uses CoinGecko API.",
     image: "/coinwatch.png",
+    tech: "React, CoinGecko API",
     github: "https://github.com/Saransh29/crypto-tracker-react",
     link: "https://crypto-tracker-react-psi.vercel.app/",
   },
@@ -71,7 +76,8 @@ const ProjectsSection = () => {
                   </Link>
                 </div>
                 <div className="mt-8 md:w-1/2">
-                  <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
+                  <h1 className="text-4xl font-bold mb-4">{project.name}</h1>
+                  <p className="text-xl mb-2">{project.tech} </p>
                   <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                     {project.description}
                   </p>

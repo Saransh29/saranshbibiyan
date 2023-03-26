@@ -18,6 +18,7 @@ const skills = [
   { skill: "PostgreSQL" },
   { skill: "MySQL" },
   { skill: "Firebase" },
+  { skill: "MongoDB" },
 ];
 
 const AboutSection = () => {
