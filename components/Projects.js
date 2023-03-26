@@ -7,7 +7,7 @@ const projects = [
   {
     name: "OpenJourney",
     description:
-      "Developed a web app to Generate an imaginative image through Stable Diffusion AI midjourney v4 Model hosted on a GCP VM instance",
+      "Developed a web app to Generate an imaginative image through Stable Diffusion AI midjourney v4 Model hosted on a GCP VM instance. Images and prompts stored on MongoDB database.",
     image: "/openjourney1.png",
     github: "https://github.com/Saransh29/next-stable-diff",
     link: "https://openjourney-next.vercel.app/",
