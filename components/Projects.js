@@ -25,7 +25,7 @@ const projects = [
   {
     name: "AgriMan",
     description:
-      "AgriMan is an Agriculture companion app that shows crop stats, weather, and answers your questions .",
+      "AgriMan is an Agriculture companion app that shows Real-time crop stats, weather info., market prices and answers your queries using ChatGPT.",
     image: "/agriman.png",
     tech: "Flutter , Firebase",
     github: "https://github.com/Saransh29/AgriMan",
@@ -34,7 +34,7 @@ const projects = [
   {
     name: "Saransh.me",
     description:
-      "AgriMan is an Agriculture companion app that shows crop stats, weather, and answers your questions .",
+      "Developed this Website using Nextjs,Tailwindcss most components are Rendered Server-Side to improve loading times .",
     image: "/saranshme.png",
     tech: "React, Nextjs, Tailwindcss",
     github: "https://github.com/Saransh29/saranshbibiyan",
@@ -48,15 +48,6 @@ const projects = [
     tech: "Flutter , Firebase",
     github: "https://github.com/Saransh29/fire_chat",
     link: "http://www.fire-chat.tech/",
-  },
-  {
-    name: "CoinWatch",
-    description:
-      "CoinWatch is a crypto price tracking app which uses CoinGecko API.",
-    image: "/coinwatch.png",
-    tech: "React, CoinGecko API",
-    github: "https://github.com/Saransh29/crypto-tracker-react",
-    link: "https://crypto-tracker-react-psi.vercel.app/",
   },
 ];
 
