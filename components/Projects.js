@@ -5,6 +5,15 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
+    name: "Ai Builder",
+    description:
+      "Develop full websites and web apps using Ai Builder. Ai Builder is a low code platform that allows you to build websites and web apps without writing a single line of code.",
+    image: "/ai-builder.png",
+    tech: "React, Nextjs, OpenAI, Nodejs, Expressjs",
+    github: "https://github.com/Saransh29/ai-builder",
+    link: "https://ai-builder-gules.vercel.app/",
+  },
+  {
     name: "OpenJourney",
     description:
       "Developed a web app to Generate an imaginative image through Stable Diffusion AI midjourney v4 Model hosted on a GCP VM instance. Images and prompts stored on MongoDB database.",
