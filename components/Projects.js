@@ -35,7 +35,7 @@ const projects = [
     name: "Saransh.me",
     description:
       "AgriMan is an Agriculture companion app that shows crop stats, weather, and answers your questions .",
-    image: "/portfolio.png",
+    image: "/saranshme.png",
     tech: "React, Nextjs, Tailwindcss",
     github: "https://github.com/Saransh29/saranshbibiyan",
     link: "https://www.saransh.me/",
