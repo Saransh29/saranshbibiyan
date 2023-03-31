@@ -35,7 +35,13 @@ const nextConfig = {
       },
       {
         source: "/build",
-        destination: "https://ai-builder-gules.vercel.app/",
+        destination: "https://ai-builder.live",
+        permanent: true,
+      },
+      {
+        source: "/docx",
+        destination:
+          "https://docs.google.com/document/d/1EbWfXX-Pjbv63EZLTPhIJj-pvRWSc2qPvS76PoL5yV8/edit",
         permanent: true,
       },
     ];
