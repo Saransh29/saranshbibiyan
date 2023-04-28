@@ -6,7 +6,11 @@ import { AnalyticsWrapper } from "@/components/Analytics";
 import { usePathname } from "next/navigation";
 import Sidebar from "@/components/sidebar";
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
   const showHeader = pathname !== "/" ? false : true;
 

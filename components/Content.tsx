@@ -40,7 +40,6 @@ export default function Content() {
           </Link>
           <a
             href="https://www.saransh.me/resume.pdf"
-            alt="alt text"
             target="_blank"
             rel="noopener noreferrer"
           >
