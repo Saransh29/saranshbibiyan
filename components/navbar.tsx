@@ -70,7 +70,6 @@ export default function Navbar() {
                     smooth={true}
                     offset={-100}
                     duration={500}
-                    cursor="pointer"
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}
