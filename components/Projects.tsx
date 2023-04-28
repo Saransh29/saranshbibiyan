@@ -65,7 +65,7 @@ const ProjectsSection = () => {
             <div key={idx}>
               <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                 <div className=" md:w-1/2">
-                  <Link href={project.link}>
+                  <Link href={project.link} target="_blank">
                     <Image
                       src={project.image}
                       alt=""
