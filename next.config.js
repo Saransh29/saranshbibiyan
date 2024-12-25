@@ -35,7 +35,7 @@ const nextConfig = {
       },
       {
         source: "/build",
-        destination: "https://ai-builder.live",
+        destination: "https://builder.yime.in",
         permanent: true,
       },
       {

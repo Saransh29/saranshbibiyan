@@ -11,7 +11,7 @@ const projects = [
     image: "/landing.png",
     tech: "React, Nextjs, OpenAI, MongoDB, Nodejs, Expressjs",
     github: "https://github.com/Saransh29/ai-builder",
-    link: "https://ai-builder.live",
+    link: "https://builder.yime.in",
   },
   {
     name: "OpenJourney",
