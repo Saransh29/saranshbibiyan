@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import ProjectCard from "../components/ProjectCard";
+import Footer from "../components/Footer";
+import { projects } from "../data/portfolioData";
+---
+
+<Layout title="All Projects — Saransh Bibiyan">
+  <Navbar client:load />
+  <main class="min-h-screen pt-5">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Header Section -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-24 border-b border-black/5 dark:border-white/5 pb-10">
+        <div class="space-y-4 max-w-2xl">
+          <a
+            href="/"
+            class="group inline-flex items-center gap-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors text-sm font-medium mb-4"
+          >
+            <span class="p-1 rounded-full bg-zinc-100 dark:bg-zinc-800 group-hover:bg-zinc-200 dark:group-hover:bg-zinc-700 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            </span>
+            Back to Home
+          </a>
+
+          <div>
+            <span class="text-[10px] font-mono tracking-[0.2em] uppercase text-zinc-400 dark:text-zinc-500 block mb-2">
+              Portfolio Archive
+            </span>
+            <h1 class="text-5xl md:text-7xl font-instrument italic font-normal text-zinc-900 dark:text-white tracking-tight leading-[1.1]">
+              All <span class="font-inter not-italic font-bold text-zinc-300 dark:text-zinc-600">Projects</span>
+            </h1>
+          </div>
+
+          <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed font-light">
+            A curated collection of shipping web applications, experiments, and digital craftsmanship.
+          </p>
+        </div>
+
+        <!-- Metadata / Counter -->
+        <div class="hidden md:block text-right">
+          <span class="block text-[10px] font-mono tracking-widest text-zinc-400 uppercase mb-2">
+            Total Works
+          </span>
+          <span class="text-6xl font-instrument italic text-zinc-200 dark:text-zinc-800">
+            {String(projects.length).padStart(2, '0')}
+          </span>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-16 md:gap-y-24">
+        {projects.map((project, index) => (
+          <ProjectCard client:visible project={project} index={index} />
+        ))}
+      </div>
+
+      <div class="mt-20">
+        <Footer client:load />
+      </div>
+    </div>
+  </main>
+</Layout>
