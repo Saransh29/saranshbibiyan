@@ -19,7 +19,7 @@ export const roles = [
     role: "Software Engineer",
     date: "May 2023 — May 2025",
     description:
-      "Core member of the engineering team from early stage. Worked on design, development, and evolution of the company's technical platform.",
+      "Core member of the engineering team from early stage. Led AI development at the company — building the initial AI-powered features and establishing the foundation for the AI systems that followed. Worked across the full stack on the design, development, and evolution of the company's technical platform, building foundational systems that scaled with the product through its growth phase.",
     skills: "Node.js • React • PostgreSQL • MongoDB",
   },
 ];
