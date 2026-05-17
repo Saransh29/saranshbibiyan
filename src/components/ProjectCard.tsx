@@ -20,6 +20,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         return techStack.find(t => t.name === techName) || { name: techName, icon: null };
     });
 
+    const projectLink = project.live || project.github || null;
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -29,7 +31,13 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
             className="group relative flex flex-col gap-5"
         >
             {/* Image/Gradient Area */}
-            <div className="block relative w-full aspect-video rounded-xl overflow-hidden group-hover:scale-[1.01] transition-transform duration-700 ease-[0.22,1,0.36,1]">
+            {(() => {
+                const ImageArea = projectLink ? 'a' : 'div';
+                return (
+            <ImageArea
+                {...(projectLink ? { href: projectLink, target: "_blank", rel: "noopener noreferrer", "aria-label": `View ${project.title}` } : {})}
+                className={`block relative w-full aspect-video rounded-xl overflow-hidden group-hover:scale-[1.01] transition-transform duration-700 ease-[0.22,1,0.36,1] ${projectLink ? 'cursor-pointer' : ''}`}
+            >
                 <div className="absolute inset-0 bg-[#F5F4F0] dark:bg-[#121214] transition-colors" />
                 <div className={`absolute inset-0 bg-linear-to-br ${project.gradient} opacity-60 group-hover:opacity-90 transition-all duration-700 ease-in-out`} />
 
@@ -52,7 +60,9 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                         )}
                     </div>
                 </div>
-            </div>
+            </ImageArea>
+                );
+            })()}
 
             {/* Content */}
             <div className="flex flex-col gap-2.5 px-1">
